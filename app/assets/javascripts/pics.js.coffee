@@ -7,3 +7,13 @@ $ ->
     $('#pics').masonry
       itemSelector: '.box'
       isFitWidth: true
+
+$(function(){
+  $('#masonry-container').masonry({
+    itemSelector: '.box',
+    columnWidth: 200,
+    isAnimated: !Modernizr.csstransitions,
+    isFitWidth: true
+  });
+
+});
